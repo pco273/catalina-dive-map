@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset=utf-8 />
+    <title>Catalina Island Dive Sites</title>
+    <meta name='viewport' content='initial-scale=1,maximum-scale=1,user-scalable=no' />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/5.0.0/normalize.css" />
+    <link href="https://fonts.googleapis.com/css?family=Quicksand:400,700" rel="stylesheet">
+    <style>
+        body {
+            margin: 0;
+            padding: 0;
+            background: #0b2a3d;
+            font-family: "Quicksand", sans-serif;
+            color: #f4f4f4;
+        }
+        section {
+            width: 85%;
+            max-width: 1100px;
+            margin: 20px auto;
+        }
+        h1 {
+            font-family: "Quicksand", sans-serif;
+            font-weight: 700;
+            font-size: 2.4em;
+            color: #ff4fa3;
+            margin: 10px 0 5px 0;
+        }
+        h2 {
+            font-weight: 400;
+            font-size: 1.2em;
+            color: #7fd4c1;
+            margin: 0 0 20px 0;
+        }
+        p {
+            font-size: 1.1em;
+            line-height: 1.7em;
+        }
+        a {
+            color: #7fd4c1;
+            text-decoration: none;
+            font-weight: 700;
+        }
+        a:hover {
+            text-decoration: underline;
+        }
+        .map-image {
+            width: 100%;
+            border: 2px solid #ff4fa3;
+            border-radius: 6px;
+        }
+        .linkbox {
+            margin: 15px 0;
+            font-size: 1.1em;
+        }
+        footer {
+            font-size: 0.9em;
+            color: #a8c4d4;
+            border-top: 1px solid #335; 
+            margin-top: 25px;
+            padding-top: 15px;
+        }
+    </style>
+</head>
+
+<body>
+    <section>
+        <h1>Catalina Island Dive Sites</h1>
+        <h2>A diver's bucket-list map of Santa Catalina Island, California</h2>
+
+        <p>
+            This map accounts for ten of the more popular scuba dive sites around Catalina Island and would be good to use as an informative dive guide. 
+          Each site is symbolized by maximum depth (fill color),
+          difficulty/certification level needed (ring color: lime = beginner, orange = intermediate, pink = advanced),
+          and access type (circle = shore dive, triangle = boat dive). California Marine
+          Protected Area boundaries are shown to help plan around regulated zones and indicate that special accomodations may be needed to dive there. 
+          As a diver I hope to complte this bucket list of all ten someday!
+
+        <img class="map-image" src="images/catalina_dive_map_web.png" alt="Map of Catalina Island dive sites" />
+
+        <div class="linkbox">
+            <a href="images/catalina_dive_map_full.png">Download the full-resolution map (300 dpi)</a>
+        </div>
+
+        <div class="linkbox">
+            <a href="https://github.com/pco273/catalina-dive-map">View this project on GitHub</a>
+        </div>
+
+        <footer>
+            <strong>Author:</strong> Priscila Covarrubias<br>
+            <strong>Date:</strong> October 2026<br>
+            <strong>Projection:</strong> WGS 84 (EPSG:4326)<br>
+            <strong>Software:</strong> QGIS 3.x<br>
+            <strong>Data sources:</strong> Dive depth &amp; difficulty - PADI dive-site pages;
+            Marine Protected Area boundaries - California Department of Fish &amp; Wildlife [ds582];
+            Satellite imagery - Esri World Imagery.
+        </footer>
+    </section>
+</body>
+
+</html>
